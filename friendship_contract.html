@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Friendship Contract</title>
+        <style type='text/css'>
+            div {
+                display:inline-block;
+                border:2px solid blue;
+                text-align:center;
+                padding:7px;
+                background:none;
+                box-shadow:1px 2px 4px 1px;
+            }
+            
+            #div1{
+                color:#525dab;
+            }
+            
+            #div2{
+                color:#4191cd;
+            }
+            
+            #div3{
+                color:#460;
+            }
+            
+            #div4{
+                color:#fa4;
+            }
+            
+            body {
+                background:beige;
+                margin:5px;
+                text-align:center;
+            }
+            
+            #beg{
+                border-radius:7px;
+                color:blue;
+            }
+            
+            #dis{
+                border-radius:7px;
+                color:red;
+            }
+        </style>
+        <script type='text/javascript' language='javascript'>
+            function validateForm(form){
+                var firstname1 = form['fname1'].value;
+                var lastname1 = form['lname1'].value;
+                var firstname2 = form['fname2'].value;
+                var lastname2 = form['lname2'].value;
+                console.log('got',firstname1,lastname1,firstname2,lastname2);
+               
+                if (firstname1 == "") {
+                    	window.alert("First name1 must be filled out");
+                    	return false;
+                		}
+                if (lastname1 == "") {
+                    	window.alert("Last name1 must be filled out");
+                    	return false;
+                		}
+                if (firstname2 == "") {
+                    	window.alert("First name2 must be filled out");
+                    	return false;
+                		}
+                if (lastname2 == "") {
+                    	window.alert("Last name2 must be filled out");
+                    	return false;
+                		}
+                return true;
+            }
+            
+            /*function notMyFriend(){
+                var nffname1 = form.nffname1.value;
+	var nflname1 = form.nflname1.value;
+	var nffname2 = form.nffname2.value;
+	var nflname2 = form.nflname2.value;
+    	
+	if (nffname1 == "") {
+        	window.alert("First name must be filled out");
+        	return false;
+    		}
+	if (nflname1 == "") {
+        	window.alert("Last name must be filled out");
+        	return false;
+    		}
+	if (nffname2 == "") {
+        	window.alert("First name must be filled out");
+        	return false;
+    		}
+	if (nflname2 == "") {
+        	window.alert("Last name must be filled out");
+        	return false;
+    		}
+	console.log("Another one bites the dust.\r\n
+		"You are now free to leave them behind.");
+	return true;
+                /*if("#dissolution" !== 0);
+                alert("Another one bites the dust.\r\n  You are now free to leave them behind.");*/
+            }
+        </script>
+	</head>
+	<body>
+        <!--Add your own HTML!-->
+        <div>
+            <div style="width:80px; height:auto; background-color:#525dab; text-align:center; border:2px solid black; border-radius:5px; padding:2px;"><a href="#des"><span style="color:white;">Description</span></a></div>
+            <div style="width:80px; height:auto; background-color:#4191cd; text-align:center; border:2px solid black; border-radius:5px; padding:2px;"><a href="#forms"><span style="color:white;">Forms</span></a></div>
+            <div style="width:80px; height:auto; background-color:#460; text-align:center; border:2px solid black; border-radius:5px; padding:2px;"><a href="#faqs"><span style="color:white;">FAQs</span></a></div>
+            <div style="width:80px; height:auto; background-color:#fa4; text-align:center; border:2px solid black; border-radius:5px; padding:2px;"><a href="#"><span style="color:white;">Help</span></a></div>
+        </div><br><br><br>
+        
+    <h2><span  id="des">Description</span></h2>
+
+        <div id="div1">
+        <p>As a result of the outcry for order and preservation of the sacred bonds of friendship, this webpage was created. There are some who need a guiding hand to help them navigate the thin line between friend and enemy.  Much like those who came before and lost their memory of the good times due to nonsense stemming from simple occurances, such as women fighting over who saw that hot guy first, to eating the last chip, to which superhero is better Batman or Superman (To which, I say there is no contest.  Superman wins everytime, hands down.).<br>This will help to put an end to the silly fights that breakup childhood friends and family members across the world... or maybe it will make things worse, either way it will give some guidance to make things seem a little easier to maneuver.</p><br>
+    </div><br><br><br>    
+    <h2><span id="forms">Forms</span></h2>
+    <p>
+    <div id="div2">
+    <h3>Construction</h3>
+    <form name="construction" onsubmit="return validateForm(this);" >
+        <p><input type="text" name="friend1" value="">&<input type="text" name="friend2" value="">, do herby agree to the following as terms and conditions for the commencement of their friendship:<br>
+        <ul>
+            <li>Upon entering into this friendship, each person must have their own socks.</li>
+            <li>Each person must have their own money to spend when going out.</li>
+            <li>Respect the personal space of each other.</li>
+            <li>Giving a gift for the birthday is mandatory.</li>
+            <li>No hitting on the other person's significant other.</li>
+            <li>No mooching!</li>
+            <li>Say you need space when you need it, and let the other person know when it's safe to come back.</li>
+        </ul>
+        </p><br>
+        <p>The undersigned do hereby agree to the above terms and conditions of the friendship. This is a binding agreement and shall be used as the governing conditions for peace and longevity of this friendship.</p><br>
+    <fieldset>
+    <small>Your typed full name in the fields to the right signifies an electronic representation of your signature:</small><input type="text" name="fname1" placeholder="First Name"><input type="text" name="lname1" placeholder="Last Name"><br><small>Please enter your email address here to receive a copy of this agreement.</small><input type="email" name="emailaddress1" placeholder="Email Address">
+    </fieldset><br><br>
+    <fieldset>
+    <small>Your typed full name in the fields to the right signifies an electronic representation of your signature:</small><input type="text" name="fname2" placeholder="First Name"><input type="text" name="lname2" placeholder="Last Name"><br><small>Please enter your email address here to receive a copy of this agreement.</small><input type="email" name="emailaddress2" placeholder="Email Address"></fieldset><br><br>
+    <input type="submit" method="GET" id="beg" value="Begin Friendship">
+    </form>
+    </div><br><br>
+    <div id="div3">
+    
+    <h3>Dissolution</h3>    
+    <form name="myDissolution" method="GET" onsubmit="return notMyFriend(this);">
+        <p><input type="text" name="nfriend1" placeholder="Person1 Name" value="">&<input type="text" name="nfriend2" placeholder="Person2 Name" value="">, do herby agree to the dissolution of friendship due to unforeseen circumstances, which may or may not have been entirely or in part a breach of the original agreement to sustain a peaceful and long lasting friendship.</p>
+        <p>The undersigned do hereby agree that there is no saving the friendship at this current time and dissolution is the best course of action at this time.</p><br>
+    <fieldset>
+    <small>Your typed full name in the fields to the right signifies an electronic representation of your signature:</small><label  for="nffname1">First Name:</label><input type="text" name="nfriend" id="nffname1" ><label  for="nflname1">Last Name:</label><input type="text" name="nfriend" id="nflname1" ><br><small>Please enter your email address here to receive a copy of this agreement.</small><input type="email" name="emailaddress" placeholder="Email Address">
+    <br><br>
+    <small>Your typed full name in the fields to the right signifies an electronic representation of your signature:</small><label  for="nffname2">Last Name:</label><input type="text" name="nfriend" id="nffname2" ><label  for="nflname2">Last Name:</label><input type="text" name="nfriend" id="nflname2" ><br><small>Please enter your email address here to receive a copy of this agreement.</small><input type="email" name="emailaddress" placeholder="Email Address"></fieldset><br><br>
+    <input type="submit" id="dis" value="Dissolve Friendship">
+    </form>
+    </p>
+    
+    <h2><span id="faqs">FAQs</span></h2>
+    <div id="div4">
+        <p><br>
+        <form id="frequentlyasked">
+            <p>
+            <textarea maxlength="200">Enter your question here.</textarea><br>or<br>Take a look at the questions and comments below...
+            </p>
+        </form>
+            
+        </p>
+    </div>
+	</body>
+</html>
